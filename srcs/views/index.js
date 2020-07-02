@@ -1,10 +1,12 @@
 let elementosPagina = {
   linhaData: document.querySelector("#linha-data"),
   mediaContainer: document.querySelector("#media-container"),
-  
+
 };
 
-let videoContainer = function() {
+let mediaContainer = function () {
+  elementosPagina.mediaContainer.href = this.apodData.apodMedia;
+
   if (this.apodData.apodMediaType == "image") {
 
     let imgContainer = document.createElement("img");
@@ -24,6 +26,6 @@ let videoContainer = function() {
     elementosPagina.mediaContainer.appendChild(videoContainer);
 
     document.querySelector(".media").src = this.apodData.apodMedia;
-    
+
   }
 };

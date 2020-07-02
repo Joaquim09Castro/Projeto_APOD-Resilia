@@ -6,10 +6,10 @@ xhr.open("GET", "https://api.nasa.gov/planetary/apod?api_key=ISIn2PcRcmIDY7CkSgM
 
 xhr.send();
 
-xhr.addEventListener("load" ,function() {
-  
+xhr.addEventListener("load", function () {
+
   apodToJson = JSON.parse(xhr.responseText);
-  
+
   apodData = {
     apodTitle: apodToJson.title,
     apodMedia: apodToJson.url,
@@ -18,7 +18,5 @@ xhr.addEventListener("load" ,function() {
     apodCopyright: apodToJson.copyright
   };
 
-  videoContainer();
+  mediaContainer();
 });
-
-// NADA DA CERTO!!!!!!!!!!!!!!!!!!!

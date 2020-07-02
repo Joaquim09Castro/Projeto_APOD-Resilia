@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-  <head lang="pt-br">
+<head lang="pt-br">
 
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
 
-    <title>APOD</title>
-  </head>
-  
-  <body>
-    <header>
-      <h1>Astronomy Picture of the Day</h1>
-      <h2>(NASA APOD API)</h2>
-    </header>
+  <title>APOD</title>
+</head>
 
-    <main>
-      <p id="linha-data"></p>
-      <div id="media-container"></div>
-      <p id="linha-expl"></p>
-    </main>
+<body>
+  <header>
+    <h1 id="page-title">Astronomy Picture of the Day</h1>
+    <h2>(NASA APOD API)</h2>
+  </header>
 
-    <script src="js/request.js"></script>
-    <script src="js/index.js"></script>
+  <main>
+    <p id="linha-data"></p>
+    <a id="media-container"></a>
+    <p id="linha-expl"></p>
+  </main>
 
-  </body>
+  <script src="srcs/controllers/request.js"></script>
+  <script src="srcs/views/index.js"></script>
+
+</body>
+
 </html>
