@@ -1,3 +1,28 @@
-h1 {
-  color: blue;
+html body {
+  background-color: #00000066;
+  position: fixed;
+  margin:0;
+  padding:0;
+  height: 100%;
+  width: 100%;
+  overflow:auto;
+}
+
+header {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px 0 20px;
+}
+
+#media-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
 }
