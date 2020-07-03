@@ -3,7 +3,7 @@ let elementosPagina = {
   mediaTitle: document.querySelector("#media-title"),
   mediaContainer: document.querySelector("#media-container"),
   mediaExpl: document.querySelector("#linha-expl"),
-  mediaCopyright: document.querySelector("#copyrigth")
+  mediaCopyright: document.querySelector("#copyright"),
 };
 
 function sobeTituloMedia() {
@@ -18,23 +18,15 @@ function sobeImagem() {
   elementosPagina.mediaContainer.href = apodData.apodMedia;
 
   if (apodData.apodMediaType == "image") {
-
     let imgContainer = document.createElement("img");
-
     imgContainer.classList.add("media");
-
     elementosPagina.mediaContainer.appendChild(imgContainer);
-
     document.querySelector(".media").src = apodData.apodMedia;
 
   } else if (apodData.apodMediaType == "video") {
-
     let videoContainer = document.createElement("video");
-
     videoContainer.classList.add("media");
-
     elementosPagina.mediaContainer.appendChild(videoContainer);
-
     document.querySelector(".media").src = apodData.apodMedia;
 
   }
@@ -50,6 +42,6 @@ function sobeExpl() {
 
 function sobeCopyright() {
   if (apodData.apodCopyright != undefined) {
-    elementosPagina.mediaCopyright.textContent = apodData.apodCopyright;
+    elementosPagina.mediaCopyright.textContent = `${apodData.apodMediaType.toUpperCase()}: ${apodData.apodCopyright}`;
   }
 }

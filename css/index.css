@@ -45,7 +45,9 @@ main {
 .media {
   max-width: 40%;
   max-height: 40%;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-radius: 60px;
+  box-shadow: #000000 10px 10px 8px;
 }
 
 #linha-expl {
@@ -53,6 +55,12 @@ main {
   right: 50%;
   left: 50%;
   margin: 0 auto;
+}
+
+#copyright {
+  padding-top: 30px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 footer {
