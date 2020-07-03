@@ -47,7 +47,12 @@ main {
   max-height: 40%;
   margin-bottom: 40px;
   border-radius: 60px;
-  box-shadow: #000000 10px 10px 8px;
+  box-shadow: #000000af 10px 10px 8px;
+}
+
+iframe {
+  width: 60em;
+  height: 25em;
 }
 
 #linha-expl {
