@@ -22,19 +22,25 @@
     <p id="media-data"></p>
 
     <a id="media-container"></a>
-    
+
     <p id="linha-expl"></p>
-    
+
     <h3 id="copyright"></h3>
   </main>
 
   <footer>
+    <div id="date-selection">
+      <label for="date-input" id="date-input-label">Escolha uma data</label>
+      <p id="error-message"></p>
+      <input type="date" name="date-input" id="date-input">
+      <button type="submit" id="date-submit">Submit</button>
+    </div>
 
   </footer>
 
   <script src="srcs/views/index.js"></script>
   <script src="srcs/controllers/page-load.js"></script>
-  
+
   <script src="srcs/controllers/form-input.js"></script>
 
 </body>

@@ -4,6 +4,8 @@ let elementosPagina = {
   mediaContainer: document.querySelector("#media-container"),
   mediaExpl: document.querySelector("#linha-expl"),
   mediaCopyright: document.querySelector("#copyright"),
+  errorBox: document.querySelector("#error-message"),
+  pageFooter: document.querySelector("footer"),
 };
 
 function sobeTituloMedia() {
@@ -32,7 +34,7 @@ function sobeImagem() {
 }
 
 function sobeExpl() {
-    elementosPagina.mediaExpl.textContent = apodData.apodExpl;
+  elementosPagina.mediaExpl.textContent = apodData.apodExpl;
 }
 
 function sobeCopyright() {
